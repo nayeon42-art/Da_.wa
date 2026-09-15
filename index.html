@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
-<title>دعوة زفاف — عبد الوهاب ونفيسة | أسامة وليلى</title>
+<title>دعوة زفاف — عبد الوهاب ونفيسة | أيمن وليلى</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
@@ -395,7 +395,7 @@ body{background:var(--dark);color:var(--cream);font-family:'Noto Naskh Arabic','
       <div class="qr-id2" id="main-qr-id">WED-2026-INVITE</div>
       <div class="qr-hint2">أبرز هذا الرمز عند الدخول للتحقق من دعوتك</div>
     </div>
-    <div class="page-footer2">✦ عبد الوهاب ✦ نفيسة ✦ أسامة ✦ ليلى ✦<br><span style="font-size:8px;letter-spacing:3px;margin-top:4px;display:block">MMXXVI · Sudan · بالتوفيق والسعادة</span></div>
+    <div class="page-footer2">✦ عبد الوهاب ✦ نفيسة ✦ أيمن ✦ ليلى ✦<br><span style="font-size:8px;letter-spacing:3px;margin-top:4px;display:block">MMXXVI · Sudan · بالتوفيق والسعادة</span></div>
   </div>
 
   <!-- ═══ PAGE: ADMIN ═══ -->
@@ -689,7 +689,7 @@ function drawQR(id,text,size){
     setTimeout(()=>{const img=h.querySelector('img')||h.querySelector('canvas');if(img){if(img.tagName==='IMG'){const i=new Image();i.onload=()=>ctx.drawImage(i,0,0,size,size);i.src=img.src}else ctx.drawImage(img,0,0,size,size)}h.remove()},250);
   }catch(e){ctx.fillStyle='#07040e';const cell=Math.floor(size/21);function f(x,y){ctx.fillRect(x,y,7*cell,7*cell);ctx.fillStyle='#fff';ctx.fillRect(x+cell,y+cell,5*cell,5*cell);ctx.fillStyle='#07040e';ctx.fillRect(x+2*cell,y+2*cell,3*cell,3*cell)}f(0,0);f((21-7)*cell,0);f(0,(21-7)*cell);for(let i=0;i<Math.min(text.length,200);i++){if(text.charCodeAt(i)%2){const r=8+Math.floor(i/13);const cc=8+(i%13);if(r<21&&cc<21)ctx.fillRect(cc*cell,r*cell,cell,cell)}}}
 }
-setTimeout(()=>drawQR('main-qr','WED-2026-Sudan|عبد الوهاب ونفيسة|أسامة وليلى',170),700);
+setTimeout(()=>drawQR('main-qr','WED-2026-Sudan|عبد الوهاب ونفيسة|أيمن وليلى',170),700);
 
 /* ═══ COUNTDOWN (Sudan time UTC+3) ═══ */
 function tick(){
